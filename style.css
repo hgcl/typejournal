@@ -1,0 +1,48 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+}
+
+.background {
+  flex: 1 1 auto;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Typography changes */
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+
+/*----- Day 190923 -----*/
+#day190923 .background {
+  background-color: springgreen;
+}
+
+#day190923 .content {
+  margin: 0 auto;
+  padding: 0em 1.5em;
+}
+
+#day190923 .font1 {
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 7.451em;
+  margin-bottom: 0.1em;
+}
+
+#day190923 .font2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.563em;
+  line-height: 1.6em;
+  color: black;
+}
