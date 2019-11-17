@@ -1,5 +1,46 @@
 @import "./normalize.css";
+@import "./typefaces.css";
+
+:root {
+  --white: white;
+  --nav-text: black;
+}
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  background: burlywood;
+}
+
+/*--- Navigation bar ---*/
+
+nav {
+  position: fixed;
+  top: 0;
+  padding: 0.8rem 0;
+  width: 100%;
+  background: var(--white);
+  font: 1.3rem "Nunito", sans-serif;
+  text-align: center;
+  color: var(--nax-text);
+}
+
+nav > ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+nav > button:focus + ul {
+  display: block;
 }
