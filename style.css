@@ -2,8 +2,8 @@
 @import "./typefaces.css";
 
 :root {
-  --white: white;
-  --nav-text: black;
+  --lightColor: white;
+  --darkColor: black;
 }
 
 * {
@@ -12,35 +12,58 @@
 
 body {
   font-size: 10px;
-  background: burlywood;
 }
 
 /*--- Navigation bar ---*/
+::-webkit-scrollbar {
+  display: none;
+}
 
 nav {
   position: fixed;
-  top: 0;
-  padding: 0.8rem 0;
-  width: 100%;
-  background: var(--white);
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  height: 100%;
+  overflow-y: scroll;
   font: 1.3rem "Nunito", sans-serif;
-  text-align: center;
-  color: var(--nax-text);
 }
 
 nav > ul {
-  display: none;
   list-style-type: none;
   padding: 0;
 }
 
-nav > button {
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  text-transform: uppercase;
+nav a {
+  text-decoration: none;
+  color: var(--lightColor);
 }
 
-nav > button:focus + ul {
-  display: block;
+/* Articles recurring styling */
+.articleNumber {
+}
+
+article {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Day 1 */
+#day1 {
+  background-color: pink;
+}
+
+/* Day 2 */
+#day2 {
+  background-color: brown;
+}
+
+/* Day 3 */
+#day3 {
+  background-color: burlywood;
+}
+
+/* Day 4 */
+#day4 {
+  background-color: cornflowerblue;
 }
