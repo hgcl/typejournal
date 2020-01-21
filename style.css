@@ -64,9 +64,29 @@ article {
   line-height: 2.5rem;
 }
 
+.articleSource {
+  color: var(--lightColor);
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+}
+
 /* Day 1 */
 #day1 {
   background-color: blue;
+}
+
+#day1 .font1 {
+  font: 5rem "Inconsolata", serif;
+}
+
+#day1 .layout {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1rem;
+  max-width: 700px;
+  color: pink;
 }
 
 /* Day 2 */
