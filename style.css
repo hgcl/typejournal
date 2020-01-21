@@ -3,6 +3,7 @@
 
 :root {
   --lightColor: white;
+  --accentColor: blue;
   --darkColor: black;
 }
 
@@ -21,17 +22,18 @@ body {
 
 nav {
   position: fixed;
-  top: 0px;
-  right: 0px;
+  top: 1rem;
+  right: 1rem;
   text-align: right;
   height: 100%;
   overflow-y: scroll;
-  font: 1.3rem "Nunito", sans-serif;
+  font: 1rem "Nunito", sans-serif;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0.5rem 0;
 }
 
 nav a {
@@ -39,18 +41,32 @@ nav a {
   color: var(--lightColor);
 }
 
-/* Articles recurring styling */
-.articleNumber {
+nav a:hover {
+  color: var(--accentColor);
 }
 
+/* Articles recurring styling */
 article {
   width: 100vw;
   height: 100vh;
 }
 
+.articleNumber {
+  font: 1rem "Nunito", sans-serif;
+  color: var(--lightColor);
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  border: 2px solid var(--lightColor);
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+}
+
 /* Day 1 */
 #day1 {
-  background-color: pink;
+  background-color: blue;
 }
 
 /* Day 2 */
