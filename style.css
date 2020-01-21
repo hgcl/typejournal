@@ -13,6 +13,7 @@
 
 body {
   font-size: 10px;
+  font: 1rem "Rubik", sans-serif;
 }
 
 /*--- Navigation bar ---*/
@@ -27,13 +28,13 @@ nav {
   text-align: right;
   height: 100%;
   overflow-y: scroll;
-  font: 1rem "Nunito", sans-serif;
 }
 
 nav > ul {
   list-style-type: none;
+  line-height: 1.2rem;
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
 }
 
 nav a {
@@ -52,16 +53,15 @@ article {
 }
 
 .articleNumber {
-  font: 1rem "Nunito", sans-serif;
   color: var(--lightColor);
   position: relative;
   top: 1rem;
   left: 1rem;
-  border: 2px solid var(--lightColor);
-  padding: 0.5rem;
-  width: 3rem;
-  height: 3rem;
+  border: 0.1rem solid var(--lightColor);
+  width: 2.5rem;
+  height: 2.5rem;
   text-align: center;
+  line-height: 2.5rem;
 }
 
 /* Day 1 */
