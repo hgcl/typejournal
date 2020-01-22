@@ -11,9 +11,12 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-size: 10px;
-  font: 1rem "Rubik", sans-serif;
+}
+
+body {
+  font: 1em "Rubik", sans-serif;
 }
 
 /*--- Navigation bar ---*/
@@ -26,7 +29,7 @@ nav {
   top: 1rem;
   right: 1rem;
   text-align: right;
-  height: 100%;
+  height: 100vh;
   overflow-y: scroll;
 }
 
@@ -48,27 +51,43 @@ nav a:hover {
 
 /* Articles recurring styling */
 article {
-  width: 100vw;
   height: 100vh;
+  display: grid;
+  grid-template-rows: max-content auto max-content;
+  grid-template-areas: "top" "content" "footer";
 }
 
 .articleNumber {
+  grid-area: top;
   color: var(--lightColor);
   position: relative;
   top: 1rem;
   left: 1rem;
+  text-align: center;
+  line-height: 2.5rem;
   border: 0.1rem solid var(--lightColor);
   width: 2.5rem;
   height: 2.5rem;
-  text-align: center;
-  line-height: 2.5rem;
 }
 
 .articleSource {
+  grid-area: footer;
   color: var(--lightColor);
-  position: absolute;
-  bottom: 0px;
   text-align: center;
+  margin: 1.5em 0 1rem 0;
+}
+
+/* Media */
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen (min-width: 401px) and (max-width: 1024px) {
+  body {
+    font-size: 0.8em;
+  }
 }
 
 /* Day 1 */
@@ -77,16 +96,19 @@ article {
 }
 
 #day1 .font1 {
-  font: 5rem "Inconsolata", serif;
+  font: 5em "Inconsolata", serif;
+  color: pink;
+  text-align: center;
 }
 
 #day1 .layout {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
   max-width: 700px;
-  color: pink;
 }
 
 /* Day 2 */
