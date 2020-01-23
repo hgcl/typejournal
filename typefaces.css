@@ -1,10 +1,13 @@
-/* Inconsolata - unused */
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+/* Inconsolata */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400&display=swap");
 
-/* Nunito - unused*/
+/* Lato */
+@import url("https://fonts.googleapis.com/css?family=Lato:900&display=swap");
+
+/* Nunito - unused */
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 
-/* Poppins - unused*/
+/* Poppins - unused */
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 /* Roboto - unused */
@@ -14,4 +17,4 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
 
 /* Rubik */
-@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:400&display=swap");

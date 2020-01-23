@@ -11,12 +11,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 10px;
-}
-
 body {
-  font: 1em "Rubik", sans-serif;
+  font: 1rem "Rubik", sans-serif;
 }
 
 /*--- Navigation bar ---*/
@@ -74,31 +70,12 @@ article {
   grid-area: footer;
   color: var(--lightColor);
   text-align: center;
-  margin: 1.5em 0 1rem 0;
-}
-
-/* Media */
-@media only screen and (max-width: 400px) {
-  body {
-    font-size: 0.5em;
-  }
-}
-
-@media only screen (min-width: 401px) and (max-width: 1024px) {
-  body {
-    font-size: 0.8em;
-  }
+  margin: 1rem 0;
 }
 
 /* Day 1 */
 #day1 {
   background-color: blue;
-}
-
-#day1 .font1 {
-  font: 5em "Inconsolata", serif;
-  color: pink;
-  text-align: center;
 }
 
 #day1 .layout {
@@ -107,8 +84,22 @@ article {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em;
-  max-width: 700px;
+  padding: 5vw;
+}
+
+#day1 .fonts {
+  text-align: center;
+  color: lightpink;
+}
+
+#day1 .font1 {
+  font: 900 14.9vmax "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+#day1 .font2 {
+  font: 3vmax "Inconsolata", serif;
+  line-height: 3.5vmax;
 }
 
 /* Day 2 */
