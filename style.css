@@ -67,10 +67,28 @@ article {
 }
 
 .articleSource {
+  font-size: 0.8rem;
   grid-area: footer;
   color: var(--lightColor);
   text-align: center;
   margin: 1rem 0;
+}
+
+/* Color label */
+.articleSource > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.3rem;
+}
+
+/* Color label */
+.color1,
+.color2 {
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 1px solid var(--lightColor);
+  margin: 0.2rem;
 }
 
 /* Day 1 */
@@ -100,6 +118,10 @@ article {
 #day1 .font2 {
   font: 3vmax "Inconsolata", serif;
   line-height: 3.5vmax;
+}
+
+#day1 .color1 {
+  background: lightpink;
 }
 
 /* Day 2 */
