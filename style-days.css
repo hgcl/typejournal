@@ -44,21 +44,15 @@
 
 #day2 .layout {
   position: relative;
-}
-
-#day2 .layout > div:first-child > div {
-  position: absolute;
-  top: 10vh;
-}
-
-#day2 .layout > div:nth-child(2) > div {
-  position: absolute;
-  top: 30vh;
+  padding-left: 10vw;
 }
 
 #day2 .font1,
 #day2 .font2 {
+  position: absolute;
   font-size: 10vmax;
+  line-height: 10vmax;
+  top: 30vh;
 }
 
 #day2 .font1 {
@@ -70,7 +64,6 @@
 #day2 .font2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.05vmax;
   color: red;
   opacity: 0.6;
 }
