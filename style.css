@@ -91,61 +91,10 @@ article {
 }
 
 .color1,
-.color2 {
+.color2,
+.color3 {
   width: 0.7rem;
   height: 0.7rem;
   border: 1px solid var(--lightColor);
   margin: 0 0.5rem;
-}
-
-/* Day 1 */
-#day1 {
-  background-color: blue;
-}
-
-#day1 .layout {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5vw;
-}
-
-#day1 .fonts {
-  text-align: center;
-  color: lightpink;
-}
-
-#day1 .font1 {
-  font: 900 14.9vmax "Lato", sans-serif;
-  text-transform: uppercase;
-}
-
-#day1 .font2 {
-  font: 3vmax "Inconsolata", serif;
-  line-height: 3.5vmax;
-}
-
-#day1 .color1 {
-  background: blue;
-}
-
-#day1 .color2 {
-  background: lightpink;
-}
-
-/* Day 2 */
-#day2 {
-  background-color: brown;
-}
-
-/* Day 3 */
-#day3 {
-  background-color: burlywood;
-}
-
-/* Day 4 */
-#day4 {
-  background-color: cornflowerblue;
 }
