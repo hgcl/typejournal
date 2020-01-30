@@ -1,6 +1,21 @@
 /*----- Day 1 -----*/
 #day1 {
-  background-color: blue;
+  --day1-c1: blue;
+  --day1-c2: lightpink;
+  --day1-c3: white;
+  background-color: var(--day1-c1);
+}
+
+#day1 .color1 {
+  background: var(--day1-c1);
+}
+
+#day1 .color2 {
+  background: var(--day1-c2);
+}
+
+#day1 .color3 {
+  background: var(--day1-c3);
 }
 
 #day1 .layout {
@@ -15,13 +30,13 @@
 #day1 .font1,
 #day1 .font2 {
   text-align: center;
-  color: lightpink;
+  color: var(--day1-c2);
 }
 
 #day1 .font1 {
   font: 900 14.7vmax "Lato", sans-serif;
   text-transform: uppercase;
-  text-shadow: 0.7vmax 0.5vmax white;
+  text-shadow: 0.7vmax 0.5vmax var(--day1-c3);
 }
 
 #day1 .font2 {
@@ -29,17 +44,24 @@
   line-height: 3.5vmax;
 }
 
-#day1 .color1 {
-  background: blue;
-}
-
-#day1 .color2 {
-  background: lightpink;
-}
-
 /*----- Day 2 -----*/
 #day2 {
-  background-color: darkturquoise;
+  --day4-c1: darkturquoise;
+  --day4-c2: orange;
+  --day4-c3: purple;
+  background-color: var(--day4-c1);
+}
+
+#day2 .color1 {
+  background: var(--day4-c1);
+}
+
+#day2 .color2 {
+  background: var(--day4-c2);
+}
+
+#day2 .color3 {
+  background: var(--day4-c3);
 }
 
 #day2 .layout {
@@ -60,14 +82,14 @@
 
 #day2 .font1 {
   font-family: "Quando", sans-serif;
-  color: orange;
+  color: var(--day4-c2);
   opacity: 1;
 }
 
 #day2 .font2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: purple;
+  color: var(--day4-c3);
   mix-blend-mode: color-burn;
   padding-left: 2.7vmax;
 }
@@ -76,21 +98,64 @@
   letter-spacing: 0.31vmax;
 }
 
-#day2 .color1 {
-  background: darkturquoise;
-}
-
-#day2 .color2 {
-  background: orange;
-}
-
-#day2 .color3 {
-  background: purple;
-}
-
 /* Day 3 */
 #day3 {
-  background-color: burlywood;
+  --day3-c1: black;
+  --day3-c2: white;
+  --day3-c3: deeppink;
+  --day3-c4: lime;
+  background-color: var(--day3-c1);
+}
+
+#day3 .color1 {
+  background: var(--day3-c1);
+}
+
+#day3 .color2 {
+  background: var(--day3-c2);
+}
+
+#day3 .color3 {
+  background: var(--day3-c3);
+}
+
+#day3 .color4 {
+  background: var(--day3-c4);
+}
+
+#day3 .layout {
+  color: var(--day3-c2);
+  margin: 5vmax;
+}
+
+#day3 .font1 {
+  font-size: 3.5vmax;
+  margin-bottom: 3vmax;
+  letter-spacing: 0.3vmax;
+}
+
+#day3 .font2 {
+  font-size: 2vmax;
+}
+
+#day3 .font1,
+#day3 .font2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  animation-duration: 0.01s;
+  animation-name: textflicker;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes textflicker {
+  from {
+    text-shadow: 0.1vmax 0 0 var(--day3-c3), -0.2vmax 0 0 var(--day3-c4);
+  }
+  to {
+    text-shadow: 0.3vmax 0.05vmax 0.2vmax var(--day3-c3),
+      -0.1vmax -0.05vmax 0.2vmax var(--day3-c4);
+  }
 }
 
 /* Day 4 */
