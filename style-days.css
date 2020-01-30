@@ -19,7 +19,7 @@
 }
 
 #day1 .font1 {
-  font: 900 14.9vmax "Lato", sans-serif;
+  font: 900 14.7vmax "Lato", sans-serif;
   text-transform: uppercase;
   text-shadow: 0.7vmax 0.5vmax white;
 }
@@ -50,8 +50,8 @@
 #day2 .font1,
 #day2 .font2 {
   position: absolute;
-  font-size: 10vmax;
-  line-height: 10vmax;
+  font-size: 9vmax;
+  line-height: 9vmax;
   top: 20vh;
   left: 0;
   bottom: 0;
