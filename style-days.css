@@ -125,17 +125,17 @@
 
 #day3 .layout {
   color: var(--day3-c2);
-  margin: 5vmax;
+  margin: 7vmin 5vmin 0 5vmin;
 }
 
 #day3 .font1 {
-  font-size: 3.5vmax;
-  margin-bottom: 3vmax;
-  letter-spacing: 0.3vmax;
+  font-size: 6vmin;
+  margin-bottom: 6vmin;
+  letter-spacing: 0.3vmin;
 }
 
 #day3 .font2 {
-  font-size: 2vmax;
+  font-size: 4vmin;
 }
 
 #day3 .font1,
@@ -160,8 +160,8 @@
 
 /*----- Day 4 -----*/
 #day4 {
-  --day4-c1: coral;
-  --day4-c2: white;
+  --day4-c1: lightsalmon;
+  --day4-c2: coral;
   background-color: var(--day4-c1);
 }
 
@@ -177,12 +177,12 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
-  padding: 0 5vw 5vmax 5vw;
+  padding: 0 5vw;
 }
 
 #day4 .font1 div {
-  font: 15vmax "Rubik Mono One", sans-serif;
-  height: 13vmax;
+  font: 21vmin "Rubik Mono One", sans-serif;
+  height: 18vmin;
   color: var(--day4-c2);
   transition: all 0.2s ease;
 }
