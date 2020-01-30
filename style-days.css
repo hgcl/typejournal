@@ -44,7 +44,7 @@
 
 #day2 .layout {
   position: relative;
-  padding-left: 10vw;
+  text-align: center;
 }
 
 #day2 .font1,
@@ -52,7 +52,10 @@
   position: absolute;
   font-size: 10vmax;
   line-height: 10vmax;
-  top: 30vh;
+  top: 20vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 #day2 .font1 {
