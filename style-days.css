@@ -1,101 +1,37 @@
-/*----- Day 1 -----*/
-#day1 {
-  --day1-c1: blue;
-  --day1-c2: lightpink;
-  --day1-c3: white;
-  background-color: var(--day1-c1);
-}
+/*----- Day 5 -----*/
 
-#day1 .color1 {
-  background: var(--day1-c1);
-}
-
-#day1 .color2 {
-  background: var(--day1-c2);
-}
-
-#day1 .color3 {
-  background: var(--day1-c3);
-}
-
-#day1 .layout {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5vw;
-}
-
-#day1 .font1,
-#day1 .font2 {
-  text-align: center;
-  color: var(--day1-c2);
-}
-
-#day1 .font1 {
-  font: 900 14.7vmax "Lato", sans-serif;
-  text-transform: uppercase;
-  text-shadow: 0.7vmax 0.5vmax var(--day1-c3);
-}
-
-#day1 .font2 {
-  font: 3vmax "Inconsolata", serif;
-  line-height: 3.5vmax;
-}
-
-/*----- Day 2 -----*/
-#day2 {
-  --day4-c1: darkturquoise;
-  --day4-c2: orange;
-  --day4-c3: purple;
+/*----- Day 4 -----*/
+#day4 {
+  --day4-c1: lightsalmon;
+  --day4-c2: coral;
   background-color: var(--day4-c1);
 }
 
-#day2 .color1 {
+#day4 .color1 {
   background: var(--day4-c1);
 }
 
-#day2 .color2 {
+#day4 .color2 {
   background: var(--day4-c2);
 }
 
-#day2 .color3 {
-  background: var(--day4-c3);
+#day4 .layout {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 5vw;
 }
 
-#day2 .layout {
-  position: relative;
-  text-align: center;
-}
-
-#day2 .font1,
-#day2 .font2 {
-  position: absolute;
-  font-size: 9vmax;
-  line-height: 9vmax;
-  top: 20vh;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-#day2 .font1 {
-  font-family: "Quando", sans-serif;
+#day4 .font1 div {
+  font: 21vmin "Rubik Mono One", sans-serif;
+  height: 18vmin;
   color: var(--day4-c2);
-  opacity: 1;
+  transition: all 0.2s ease;
 }
 
-#day2 .font2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: var(--day4-c3);
-  mix-blend-mode: color-burn;
-  padding-left: 2.7vmax;
-}
-
-#day2 .font2 > div:first-child {
-  letter-spacing: 0.31vmax;
+#day4 .font1 div > span:hover,
+#day4 .font1 div > span:active {
+  color: transparent;
 }
 
 /*----- Day 3 -----*/
@@ -158,36 +94,102 @@
   }
 }
 
-/*----- Day 4 -----*/
-#day4 {
-  --day4-c1: lightsalmon;
-  --day4-c2: coral;
+/*----- Day 2 -----*/
+#day2 {
+  --day4-c1: darkturquoise;
+  --day4-c2: orange;
+  --day4-c3: purple;
   background-color: var(--day4-c1);
 }
 
-#day4 .color1 {
+#day2 .color1 {
   background: var(--day4-c1);
 }
 
-#day4 .color2 {
+#day2 .color2 {
   background: var(--day4-c2);
 }
 
-#day4 .layout {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  padding: 0 5vw;
+#day2 .color3 {
+  background: var(--day4-c3);
 }
 
-#day4 .font1 div {
-  font: 21vmin "Rubik Mono One", sans-serif;
-  height: 18vmin;
+#day2 .layout {
+  position: relative;
+  text-align: center;
+}
+
+#day2 .font1,
+#day2 .font2 {
+  position: absolute;
+  font-size: 9vmax;
+  line-height: 9vmax;
+  top: 20vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#day2 .font1 {
+  font-family: "Quando", sans-serif;
   color: var(--day4-c2);
-  transition: all 0.2s ease;
+  opacity: 1;
 }
 
-#day4 .font1 div > span:hover,
-#day4 .font1 div > span:active {
-  color: transparent;
+#day2 .font2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--day4-c3);
+  mix-blend-mode: color-burn;
+  padding-left: 2.7vmax;
+}
+
+#day2 .font2 > div:first-child {
+  letter-spacing: 0.31vmax;
+}
+
+/*----- Day 1 -----*/
+#day1 {
+  --day1-c1: blue;
+  --day1-c2: lightpink;
+  --day1-c3: white;
+  background-color: var(--day1-c1);
+}
+
+#day1 .color1 {
+  background: var(--day1-c1);
+}
+
+#day1 .color2 {
+  background: var(--day1-c2);
+}
+
+#day1 .color3 {
+  background: var(--day1-c3);
+}
+
+#day1 .layout {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+}
+
+#day1 .font1,
+#day1 .font2 {
+  text-align: center;
+  color: var(--day1-c2);
+}
+
+#day1 .font1 {
+  font: 900 14.7vmax "Lato", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0.7vmax 0.5vmax var(--day1-c3);
+}
+
+#day1 .font2 {
+  font: 3vmax "Inconsolata", serif;
+  line-height: 3.5vmax;
 }
