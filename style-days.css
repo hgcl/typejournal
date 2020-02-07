@@ -1,12 +1,22 @@
 /*----- Day 5 -----*/
 #day5 {
-  --day5-c1: navy;
-  --day5-c2: white;
-  /*   background-color: var(--day5-c1); */
+  --day5-c1: tan;
+  --day5-c2: papayawhip;
+  background-color: var(--day5-c1);
 }
 
-#day5 .font1 {
-  font: 20vmin "Bebas Neue", sans-serif;
+#day5 svg {
+  width: 80vmin;
+  height: auto;
+  fill: var(--day5-c2);
+}
+
+#day5 .font2 li {
+  display: inline;
+}
+
+#day5 .font2 li:before {
+  content: "• ";
 }
 
 /*----- Day 4 -----*/
