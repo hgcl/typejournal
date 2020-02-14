@@ -6,17 +6,34 @@
 }
 
 #day5 svg {
-  width: 80vmin;
+  width: 70vmin;
   height: auto;
   fill: var(--day5-c2);
 }
 
-#day5 .font2 li {
-  display: inline;
+#day5 .layout {
+  text-align: center;
 }
 
-#day5 .font2 li:before {
-  content: "• ";
+#day5 .layout > div {
+  position: relative;
+  top: 30vmin;
+}
+
+#day5 .font1 > div {
+  font-size: 4vmin;
+}
+
+#day5 .font1 li {
+  list-style-type: none;
+  display: inline;
+  font-size: 2vmin;
+}
+
+#day5 .font1 > ul {
+  padding: 0;
+  width: 60vmin;
+  margin: 0 auto;
 }
 
 /*----- Day 4 -----*/
