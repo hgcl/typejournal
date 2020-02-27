@@ -6,34 +6,29 @@
 }
 
 #day5 svg {
-  width: 70vmin;
-  height: auto;
+  width: 90vmin;
   fill: var(--day5-c2);
+  position: absolute;
 }
 
 #day5 .layout {
-  text-align: center;
-}
-
-#day5 .layout > div {
+  width: 90vw;
   position: relative;
-  top: 30vmin;
+  margin: 0 auto;
 }
 
-#day5 .font1 > div {
-  font-size: 4vmin;
+/* Select .font1 & .font2 only */
+#day5 .layout > div {
+  z-index: 1;
+  width: 90vmin;
+  position: absolute;
+  top: 20vh;
+  text-align: center;
 }
 
 #day5 .font1 li {
   list-style-type: none;
   display: inline;
-  font-size: 2vmin;
-}
-
-#day5 .font1 > ul {
-  padding: 0;
-  width: 60vmin;
-  margin: 0 auto;
 }
 
 /*----- Day 4 -----*/
