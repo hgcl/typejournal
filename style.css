@@ -60,6 +60,7 @@ article {
 }
 
 .articleNumber {
+  z-index: 10;
   grid-area: top;
   color: var(--lightColor);
   position: relative;
@@ -73,6 +74,7 @@ article {
 }
 
 .articleSource {
+  z-index: 30;
   font-size: 0.7rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -80,7 +82,7 @@ article {
   grid-area: footer;
   color: var(--lightColor);
   text-align: center;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 /* Color label */

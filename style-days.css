@@ -2,33 +2,52 @@
 #day5 {
   --day5-c1: tan;
   --day5-c2: papayawhip;
+  --day5-c3: sienna;
   background-color: var(--day5-c1);
+  overflow: hidden;
 }
 
 #day5 svg {
-  width: 90vmin;
   fill: var(--day5-c2);
   position: absolute;
+  top: 3vh;
+  left: 25vw;
 }
 
 #day5 .layout {
-  width: 90vw;
+  max-height: 80vh;
   position: relative;
+  display: flex;
   margin: 0 auto;
+  align-items: center;
 }
 
-/* Select .font1 & .font2 only */
 #day5 .layout > div {
-  z-index: 1;
-  width: 90vmin;
-  position: absolute;
-  top: 20vh;
-  text-align: center;
+  z-index: 2;
+  width: 78vw;
+  color: var(--day5-c3);
 }
 
-#day5 .font1 li {
-  list-style-type: none;
-  display: inline;
+#day5 .font2 {
+  font: 5vmin "Homemade Apple", sans-serif;
+}
+
+#day5 .font1 {
+  font: 4vmin "Open Sans", sans-serif;
+}
+
+#day5 .font1 > div {
+  margin: 4vmin 0 0 5vmin;
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  #day5 .font1 {
+    width: 85vw;
+  }
+  #day5 svg {
+    width: 130vw;
+  }
 }
 
 /*----- Day 4 -----*/
@@ -50,7 +69,7 @@
   display: flex;
   margin: 0 auto;
   align-items: center;
-  padding: 0 5vw;
+  padding: 0 5vw 1rem 5vw;
 }
 
 #day4 .font1 div {
